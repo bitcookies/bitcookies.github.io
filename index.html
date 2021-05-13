@@ -1,27 +1,271 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Github Page</title>
-	<link rel="stylesheet" href="assets/style.css">
+	<title>My Apps | Bitcookies</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+  	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="theme-color" content="#222222">
+
+	<style>
+		.loader {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+			background: url("images/logo.svg") center no-repeat #F4F4F4;
+			background-size: 72px 72px;
+		}
+	</style>
+
+	<script language="javaScript">
+		function onload() {
+			if (document.readyState === 'loading') {
+				console.log('Loading Not Yet');
+			} else {
+				console.log('Loading Complete');
+				$(".loader").fadeOut("slow");
+			}
+		}
+	</script>
 </head>
 
-<body>
+<body class="is-preload" onload="onload()">
 
-	<section class="showcase">
-		<div class="video-container">
-			<video src="assets/video.mov" autoplay="" muted="" loop=""></video>
-		</div>
-		<div class="content">
-			<h1>Github Page</h1>
-			<h3>This page is blank.<br>I'm hosted with GitHub Pages.</h3>
-		</div>
-	</section>
+	<!-- Loader -->
+	<div class="loader" id="loader"></div>
 
-	<section id="about">
-		<h1>Bitcookies</h1>
-		<p><a href="https://github.com/bitcookies">https://github.com/bitcookies</a></p>
-	</section>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">BITCOOKIES</a></h1>
+			<nav class="links">
+				<ul>
+					<li><a class="icon solid fa-windows"> Windows</a></li>
+					<li><a class="icon solid fa-apple"> macOS</a></li>
+				</ul>
+			</nav>
+			<nav class="main">
+				<ul>
+					<li class="menu">
+						<a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<section id="menu">
+
+			<!-- Links -->
+			<section>
+				<ul class="links">
+					<li>
+						<a href="winrar-keygen/index.html">
+							<h3>WinRAR Keygen</h3>
+							<p>Principle of WinRAR key generation.</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Actions -->
+			<section>
+				<ul class="actions stacked">
+					<li><a href="#" class="button large fit">Back to Github</a></li>
+				</ul>
+			</section>
+
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- WinRAR Keygen -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="winrar-keygen/index.html">WinRAR Keygen</a></h2>
+						<p>Principle of WinRAR key generation.</p>
+					</div>
+					<div class="meta">
+						<p class="published" style="background-color: #B0DAE0; text-align: center;">Developer</p>
+						<a href="https://github.com/windmill0503" class="author"><span class="name">Haoning Wu</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+					</div>
+				</header>
+				<a href="winrar-keygen/index.html" class="image featured"><img src="images/winrar-keygen.jpg" alt="winrar-keygen" /></a>
+				<p>WinRAR is not a free software. If you want to use it, you should pay to RARLAB and then you will get a license file named rarreg.key. This repository will tell you how WinRAR license file "rarreg.key" is generated.</p>
+				<footer>
+					<ul class="actions">
+						<li><a href="winrar-keygen/index.html" class="button large">View</a></li>
+					</ul>
+					<ul class="stats">
+						<li><a class="icon solid fa-windows">Windows 10</a></li>
+						<li><a class="icon solid fa-windows">Windows 8</a></li>
+						<li><a class="icon solid fa-windows">Windows 7</a></li>
+					</ul>
+				</footer>
+			</article>
+
+			<!-- More -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">More</a></h2>
+						<p>More desktop software is under development. Coming soon!</p>
+					</div>
+					<div class="meta">
+						<p class="published" style="background-color: #B0DAE0; text-align: center;">Developer</p>
+						<a href="https://github.com/windmill0503" class="author"><span class="name">Haoning Wu</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+					</div>
+				</header>
+				<a href="#" class="image featured"><img src="images/logo-words.svg" alt="coming" /></a>
+				<!--<p>内容摘要</p>
+				<footer>
+					<ul class="actions">
+						<li><a href="#" class="button large">View</a></li>
+					</ul>
+					<ul class="stats">
+						<li><a class="icon solid fa-windows">Windows</a></li>
+						<li><a class="icon solid fa-apple">macOS</a></li>
+					</ul>
+				</footer>-->
+			</article>
+
+			<!-- Pagination
+			<ul class="actions pagination">
+				<li><a href="" class="disabled button large previous">Previous Page</a></li>
+				<li><a href="#" class="button large next">Next Page</a></li>
+			</ul> -->
+
+		</div>
+
+		<!-- Sidebar -->
+		<section id="sidebar">
+
+			<!-- Intro -->
+			<section id="intro">
+				<a href="index.html" class="logo"><img src="images/logo.svg" alt="Bitcookies logo" /></a>
+				<header>
+					<h2 style="letter-spacing: 0.2em">BITCOOKIES</h2>
+					<p>Bitcookies is my development brand and is used on my Windows and macOS software. You can view and download all bitcookies software here :-)</p>
+				</header>
+			</section>
+
+			<!-- Mini Posts -->
+			<section>
+				<div class="mini-posts">
+
+					<!-- Scenery Architecture -->
+					<article class="mini-post">
+						<header>
+							<h3><a href="https://www.nousbuild.org/">Scenery Architecture</a></h3>
+							<p class="published">My personal work website and blog.</p>
+							<a href="https://github.com/windmill0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+						</header>
+						<a href="https://www.nousbuild.org/" class="image"><img src="images/nousbuild.jpg" alt="nousbuild" /></a>
+					</article>
+
+					<!-- CatTalk -->
+					<article class="mini-post">
+						<header>
+							<h3><a href="https://windmill0503.github.io/get-cattalk/">CatTalk</a></h3>
+							<p class="published">My original campus comics release Web & Mini Program.</p>
+							<a href="https://github.com/windmill0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+						</header>
+						<a href="https://windmill0503.github.io/get-cattalk/" class="image"><img src="images/cattalk.jpg" alt="cattalk" /></a>
+					</article>
+
+					<!-- City Weather -->
+					<article class="mini-post">
+						<header>
+							<h3><a href="https://windmill0503.github.io/get-cityweather/">City Weather</a></h3>
+							<p class="published">A weather Mini Program Project in a minimalist style of the cities.</p>
+							<a href="https://github.com/windmill0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+						</header>
+						<a href="https://windmill0503.github.io/get-cityweather/" class="image"><img src="images/cityweather.jpg" alt="cityweather" /></a>
+					</article>
+
+					<!-- Pitch Perfect -->
+					<article class="mini-post">
+						<header>
+							<h3><a href="https://github.com/windmill0503/pitchPerfect">Scenery Architecture</a></h3>
+							<p class="published">A simple app that can save your voice to 6 different styles.</p>
+							<a href="https://github.com/windmill0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+						</header>
+						<a href="https://github.com/windmill0503/pitchPerfect" class="image"><img src="images/pitch-perfect.jpg" alt="pitch-perfect" /></a>
+					</article>
+
+				</div>
+			</section>
+
+			<!-- Posts List -->
+			<section>
+				<ul class="posts">
+					<li>
+						<article>
+							<header>
+								<h3><a href="https://www.nousbuild.org/codeu/">Code Studio</a></h3>
+								<p class="published">My development blog.</p>
+							</header>
+							<a href="https://www.nousbuild.org/codeu/" class="image"><img src="images/codeu.png" alt="codeu" /></a>
+						</article>
+					</li>
+					<li>
+						<article>
+							<header>
+								<h3><a href="https://www.nousbuild.org/codelab/">Machine Learning Lab</a></h3>
+								<p class="published">My Machine Learning blog.</p>
+							</header>
+							<a href="https://www.nousbuild.org/codelab/" class="image"><img src="images/codelab.png" alt="codelab" /></a>
+						</article>
+					</li>
+				</ul>
+			</section>
+
+			<!-- About -->
+			<section class="blurb">
+				<h2>About Me</h2>
+				<p>I'm a developer, mainly developing some Windows & macOS Apps, that about the Architecture and Civil Engineering. You can See and Download those Desktop Apps from <a href="https://bitcookies.nousbuild.com/">Bitcookies</a>.</p>
+				<ul class="actions">
+					<li><a href="https://github.nousbuild.com/" class="button">More</a></li>
+				</ul>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/windmill0503" class="icon brands fab fa-github-alt" title="Github @windmill0503"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/bitcookies" class="icon brands fab fa-github" title="Github @bitcookies"><span class="label">Facebook</span></a></li>
+				</ul>
+				<p class="copyright">&copy; <span id="footerYear">2021</span> <a href="https://bitcookies.nousbuild.com">Bitcookies</a>. All Rights Reserved.</p>
+			</section>
+
+		</section>
+
+	</div>
+
+	<script language="javaScript">
+		/* footerYeaer */
+		document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+	</script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 
