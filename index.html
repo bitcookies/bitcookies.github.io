@@ -5,7 +5,7 @@
 	<title>My Apps | Bitcookies</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" id="main-css" href="assets/css/main.css" />
 
   	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon.png">
@@ -24,6 +24,17 @@
 			background: url("images/logo.svg") center no-repeat #F4F4F4;
 			background-size: 72px 72px;
 		}
+
+		.loader-dark {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+			background: url("images/logo.svg") center no-repeat #1E1E1E;
+			background-size: 72px 72px;
+		}
 	</style>
 
 	<script language="javaScript">
@@ -34,8 +45,31 @@
 				console.log('Loading Complete');
 				$(".loader").fadeOut("slow");
 			}
+
+			var checked = localStorage.getItem("dark-theme-toggle");
+			if (checked == "light") {
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main.css";
+				}, 200);
+
+			} else if (checked == "dark") {
+				document.getElementById("loader").className = "loader-dark";
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main-dark.css";
+				}, 200);
+			} else {
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main.css";
+				}, 200);
+			}
 		}
 	</script>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
 </head>
 
 <body class="is-preload" onload="onload()">
@@ -51,8 +85,8 @@
 			<h1><a href="index.html">BITCOOKIES</a></h1>
 			<nav class="links">
 				<ul>
-					<li><a class="icon solid fa-windows"> Windows</a></li>
-					<li><a class="icon solid fa-apple"> macOS</a></li>
+					<li><a class="icon solid fa-user" style="cursor: pointer;" onclick="window.location='privacy/index.html'"> Privacy Page</a></li>
+					<li><a class="icon solid fa-toggle-off" id="dark-theme-toggle" onclick="saveDarkMode()" style="cursor: pointer;"> Dark Mode</a></li>
 				</ul>
 			</nav>
 			<nav class="main">
@@ -69,6 +103,14 @@
 
 			<!-- Links -->
 			<section>
+				<ul class="links">
+					<li>
+						<a href="pudding-vscoe-theme/index.html">
+							<h3>Pudding VSCode Theme</h3>
+							<p>A Pudding Color Theme for Visual Studio Code.</p>
+						</a>
+					</li>
+				</ul>
 				<ul class="links">
 					<li>
 						<a href="winrar-keygen/index.html">
@@ -91,6 +133,31 @@
 		<!-- Main -->
 		<div id="main">
 
+			<!-- Pudding VSCode Theme -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="pudding-vscoe-theme/index.html">Pudding VSCode Theme</a></h2>
+						<p>A Pudding Color Theme for Visual Studio Code.</p>
+					</div>
+					<div class="meta">
+						<p class="published" style="background-color: #B0DAE0; text-align: center;">Developer</p>
+						<a href="https://github.com/windmill0503" class="author"><span class="name">Haoning Wu</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+					</div>
+				</header>
+				<a href="pudding-vscoe-theme/index.html" class="image featured"><img src="images/pudding-vscoe-theme.jpg" alt="pudding-vscoe-theme" /></a>
+				<p>WinRAR is not a free software. If you want to use it, you should pay to RARLAB and then you will get a license file named rarreg.key. This repository will tell you how WinRAR license file "rarreg.key" is generated.</p>
+				<footer>
+					<ul class="actions">
+						<li><a href="pudding-vscoe-theme/index.html" class="button large">View</a></li>
+					</ul>
+					<ul class="stats">
+						<li><a class="icon brands fa-windows">Windows</a></li>
+						<li><a class="icon brands fa-apple">macOS</a></li>
+					</ul>
+				</footer>
+			</article>
+
 			<!-- WinRAR Keygen -->
 			<article class="post">
 				<header>
@@ -110,43 +177,10 @@
 						<li><a href="winrar-keygen/index.html" class="button large">View</a></li>
 					</ul>
 					<ul class="stats">
-						<li><a class="icon solid fa-windows">Windows 10</a></li>
-						<li><a class="icon solid fa-windows">Windows 8</a></li>
-						<li><a class="icon solid fa-windows">Windows 7</a></li>
+						<li><a class="icon brands fa-windows">Windows</a></li>
 					</ul>
 				</footer>
 			</article>
-
-			<!-- More -->
-			<article class="post">
-				<header>
-					<div class="title">
-						<h2><a href="#">More</a></h2>
-						<p>More desktop software is under development. Coming soon!</p>
-					</div>
-					<div class="meta">
-						<p class="published" style="background-color: #B0DAE0; text-align: center;">Developer</p>
-						<a href="https://github.com/windmill0503" class="author"><span class="name">Haoning Wu</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
-					</div>
-				</header>
-				<a href="#" class="image featured"><img src="images/logo-words.svg" alt="coming" /></a>
-				<!--<p>内容摘要</p>
-				<footer>
-					<ul class="actions">
-						<li><a href="#" class="button large">View</a></li>
-					</ul>
-					<ul class="stats">
-						<li><a class="icon solid fa-windows">Windows</a></li>
-						<li><a class="icon solid fa-apple">macOS</a></li>
-					</ul>
-				</footer>-->
-			</article>
-
-			<!-- Pagination
-			<ul class="actions pagination">
-				<li><a href="" class="disabled button large previous">Previous Page</a></li>
-				<li><a href="#" class="button large next">Next Page</a></li>
-			</ul> -->
 
 		</div>
 
@@ -158,7 +192,8 @@
 				<a href="index.html" class="logo"><img src="images/logo.svg" alt="Bitcookies logo" /></a>
 				<header>
 					<h2 style="letter-spacing: 0.2em">BITCOOKIES</h2>
-					<p>Bitcookies is my development brand and is used on my Windows and macOS software. You can view and download all bitcookies software here :-)</p>
+					<p>Bitcookies is my development brand and is used on my Windows and macOS software & expansion.</p>
+					<p>You can view and download all Bitcookies software and expansion here :-)</p>
 				</header>
 			</section>
 
@@ -196,16 +231,6 @@
 						<a href="https://windmill0503.github.io/get-cityweather/" class="image"><img src="images/cityweather.jpg" alt="cityweather" /></a>
 					</article>
 
-					<!-- Pitch Perfect -->
-					<article class="mini-post">
-						<header>
-							<h3><a href="https://github.com/windmill0503/pitchPerfect">Pitch Perfect</a></h3>
-							<p class="published">A simple app that can save your voice to 6 different styles.</p>
-							<a href="https://github.com/windmill0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
-						</header>
-						<a href="https://github.com/windmill0503/pitchPerfect" class="image"><img src="images/pitch-perfect.jpg" alt="pitch-perfect" /></a>
-					</article>
-
 				</div>
 			</section>
 
@@ -236,7 +261,8 @@
 			<!-- About -->
 			<section class="blurb">
 				<h2>About Me</h2>
-				<p>I'm a developer, mainly developing some Windows & macOS Apps, that about the Architecture and Civil Engineering. You can See and Download those Desktop Apps from <a href="https://bitcookies.nousbuild.com/">Bitcookies</a>.</p>
+				<p>I'm a developer, mainly developing some Windows & macOS Apps, that about the Architecture and Civil Engineering.</p>
+				<p>You can see and download those software and expansion from <a href="https://bitcookies.nousbuild.com/">Bitcookies</a>.</p>
 				<ul class="actions">
 					<li><a href="https://github.nousbuild.com/" class="button">More</a></li>
 				</ul>
@@ -245,8 +271,8 @@
 			<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="https://github.com/windmill0503" class="icon brands fab fa-github-alt" title="Github @windmill0503"><span class="label">Twitter</span></a></li>
-					<li><a href="https://github.com/bitcookies" class="icon brands fab fa-github" title="Github @bitcookies"><span class="label">Facebook</span></a></li>
+					<li><a href="https://github.com/windmill0503" class="icon brands fab fa-github-alt" title="Github @windmill0503"><span class="label">Github</span></a></li>
+					<li><a href="https://github.com/bitcookies" class="icon brands fab fa-github" title="Github @bitcookies"><span class="label">Github</span></a></li>
 				</ul>
 				<p class="copyright">&copy; <span id="footerYear">2021</span> <a href="https://bitcookies.nousbuild.com">Bitcookies</a>. All Rights Reserved.</p>
 			</section>
@@ -255,7 +281,75 @@
 
 	</div>
 
+	<!-- Move2Top -->
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
+	</div>
+
 	<script language="javaScript">
+		/* Move2Top */
+		(function ($) {
+			$(document).ready(function () {
+			"use strict";
+			var progressPath = document.querySelector('.progress-wrap path');
+			var pathLength = progressPath.getTotalLength();
+			progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+			progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+			progressPath.style.strokeDashoffset = pathLength;
+			progressPath.getBoundingClientRect();
+			progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+			var updateProgress = function () {
+				var scroll = $(window).scrollTop();
+				var height = $(document).height() - $(window).height();
+				var progress = pathLength - (scroll * pathLength / height);
+				progressPath.style.strokeDashoffset = progress;
+			}
+			updateProgress();
+			$(window).scroll(updateProgress);
+			var offset = 50;
+			var duration = 550;
+			jQuery(window).on('scroll', function () {
+				if (jQuery(this).scrollTop() > offset) {
+				jQuery('.progress-wrap').addClass('active-progress');
+				} else {
+				jQuery('.progress-wrap').removeClass('active-progress');
+				}
+			});
+			jQuery('.progress-wrap').on('click', function (event) {
+				event.preventDefault();
+				jQuery('html, body').animate({ scrollTop: 0 }, duration);
+				return false;
+			})
+			});
+		})(jQuery);
+
+		/* saveDarkMode */
+		function saveDarkMode() {
+			var checked = localStorage.getItem("dark-theme-toggle");
+			if (checked == "light") {
+				localStorage.setItem("dark-theme-toggle", "dark");
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main-dark.css";
+				}, 200);
+
+			} else if (checked == "dark") {
+				localStorage.setItem("dark-theme-toggle", "light");
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main.css";
+				}, 200);
+			} else {
+				localStorage.setItem("dark-theme-toggle", "dark");
+				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				setTimeout(function () {
+					document.getElementById("main-css").href = "assets/css/main-dark.css";
+				}, 200);
+			}
+		}
+		
 		/* footerYeaer */
 		document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 	</script>

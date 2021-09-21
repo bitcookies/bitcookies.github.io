@@ -1,6 +1,6 @@
 ### Bit Cookies
 
-Bit Cookies is my development brand and is used on my Windows and macOS software. 
+Bit Cookies is my development brand and is used on my Windows and macOS software & expansion.
 
 You can view and download all Bit Cookies' software here :-)
 
