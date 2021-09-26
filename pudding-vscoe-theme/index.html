@@ -5,12 +5,27 @@
 	<title>Pudding VSCode Theme | Bitcookies</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A Pudding Color Theme for Visual Studio Code." />
+	<meta name="keywords" content="Bitcookies, Bit, Cookies, VSCode, Visual Studio Code, Theme, Light Theme, Dark Theme" />
 
   	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="192x192" href="../apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="../favicon.png">
 	<link rel="shortcut icon" href="../favicon.ico">
 	<meta name="theme-color" content="#222222">
+
+	<!-- Add PWA Support -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#FFE8E7">
+	<link rel="manifest" href="../manifest.json">
+	<script type="text/javascript">
+		if (navigator.serviceWorker != null) {
+		  navigator.serviceWorker.register('sw.js')
+		  .then(function(registration) {
+			console.log('Registered events at scope: ', registration.scope);
+		  });
+		}
+	</script>
 
 	<!-- Loader CSS -->
 	<style>
