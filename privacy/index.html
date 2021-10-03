@@ -193,10 +193,21 @@
 				<p>Bitcookies websites do not actively collect information from users, but only passively in some cases. Related information is as follows:</p>
 				<h3>1. Cookies</h3>
 				<p>We currently do not have any interactive features and do not generate user cookies.</p>
-				<h3>2. Service Workers</h3>
-				<p>Service Workers will store some of the site's static resources to make the next visit quicker.</p>
-				<h3>3. Local Storage</h3>
+				
+				<h3>2. Local Storage</h3>
 				<p>Local Storage stores some of your settings, such as selected theme information, so that the next time you visit, you can use the previous settings directly.</p>
+				<p>You can also click the button below to delete Local Storage directly.</p>
+				<ul class="actions" style="justify-content: center;">
+					<li><button id="fix1" class="button large icon solid fa-eraser" onclick="fix1Button(this.id)">Clear Storage</button></li>
+				</ul>
+
+				<h3>3. Service Workers</h3>
+				<p>Service Workers will store some of the site's static resources to make the next visit quicker.</p>
+				<p>You can also click the button below to unregister Service Workers directly.</p>
+				<ul class="actions" style="justify-content: center;">
+					<li><button id="fix2" class="button large icon solid fa-trash-alt" onclick="fix2Button(this.id)">Unregister SW</button></li>
+				</ul>
+
 				<h2>Software & Expansion Privacy</h2>
 				<p>Due to the different features of each software and expansion, the privacy policy will be different. Therefore, the privacy statements of software and expansions will be stated separately on each software and expansion page. We will not write it out in detail here.</p>
 				<ul class="actions">
@@ -290,6 +301,43 @@
 
 		/* footerYeaer */
 		document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+
+		/* fix1 button */
+		function fix1Button(clicked_id) {
+			document.getElementById("fix1").innerHTML = "Done!";
+			document.getElementById("fix1").disabled = true;
+			var btn = document.getElementById(clicked_id);
+			btn.classList.add('start');
+			setTimeout(function () {
+				btn.classList.remove('start');
+				/* clear local storage */
+				sessionStorage.clear();
+				localStorage.clear();
+			}, 2000);
+		}
+
+		/* fix2 button */
+		function fix2Button(clicked_id) {
+			document.getElementById("fix2").innerHTML = "Done!";
+			document.getElementById("fix2").disabled = true;
+			var btn = document.getElementById(clicked_id);
+			btn.classList.add('start');
+			setTimeout(function () {
+				btn.classList.remove('start');
+				/* remove the service worker cache */
+				caches.keys().then(function (keyList) {
+					return Promise.all(keyList.map(function (key) {
+						return caches.delete(key);
+					}));
+				})
+				/* unregister service workers */
+				navigator.serviceWorker.getRegistrations().then(function (registrations) {
+					for (let registration of registrations) {
+						registration.unregister();
+					}
+				});
+			}, 2000);
+		}
 	</script>
 
 	<!-- Scripts -->
