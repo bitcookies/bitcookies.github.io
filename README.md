@@ -14,12 +14,16 @@
   <img alt="icon" src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" />
   <img alt="icon" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fbitcookies&labelColor=%23000000&countColor=%23ff8a65" />
 </p>
-
 *Bit Cookies* is my development brand, used to share some desktop software and plug-ins I developed for everyone to download and use.
 
 + 🖥 You can view and download at [repo](https://github.com/bitcookies?tab=repositories) or [bitcookies.nousbuild.com](https://bitcookies.nousbuild.com).
-
 + 🎨 For more information, you can focus on my GitHub <img src="https://avatars.githubusercontent.com/u/18262199" width="18px"/> [@windmill0503](https://github.com/windmill0503).
+
+<p align="center">
+  <a href="https://github.com/bitcookies">
+    <img src="https://ghchart.rshah.org/bitcookies" alt="Bitcookies's Github chart" />
+  </a>
+</p>
 
 #### 📋 Recent Dev Projects
 
