@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.0.2';
+const CACHE_VERSION = '1.0.3';
 
 const BASE_CACHE_FILES = [
     '/pwa@192.png',

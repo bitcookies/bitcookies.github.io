@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="assets/bitcookies.svg" align="center" alt="Logo" />
+ <img width="100px" src="images/logo.svg" align="center" alt="Logo" />
  <h2 align="center">Bitcookies</h2>
 </p>
 <p align="center">
@@ -14,6 +14,7 @@
   <img alt="icon" src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" />
   <img alt="icon" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fbitcookies&labelColor=%23000000&countColor=%23ff8a65" />
 </p>
+
 *Bit Cookies* is my development brand, used to share some desktop software and plug-ins I developed for everyone to download and use.
 
 + 🖥 You can view and download at [repo](https://github.com/bitcookies?tab=repositories) or [bitcookies.nousbuild.com](https://bitcookies.nousbuild.com).
@@ -38,4 +39,4 @@
 | [Pitch Perfect](https://github.com/windmill0503/pitchPerfect) | Swift                     |
 
 <a href="https://bitcookies.nousbuild.com/">
-  <img align="middle" src="assets/powered-by.svg" alt="Logo" /></a>
+  <img align="middle" src="images/powered-by.svg" alt="Logo" /></a>

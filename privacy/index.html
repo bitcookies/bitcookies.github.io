@@ -2,11 +2,18 @@
 <html>
 
 <head>
+	<!-- Title -->
 	<title>Privacy - Bitcookies</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Bitcookies' Privacy Statement" />
-	<meta name="keywords" content="Bitcookies, Bit, Cookies, Privacy" />
+
+	<!-- Meta -->
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-language" content="en-us">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="author" content="Bitcookies">
+	<meta name="description" content="Bitcookies' Privacy Statement">
+	<meta name="keywords" content="Bitcookies, Bit, Cookies, Privacy">
 
   	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="192x192" href="../apple-touch-icon.png">
@@ -86,9 +93,16 @@
 				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
 				document.getElementById("switch-theme-color").innerHTML = darkstyle;
 			} else {
-				document.getElementById("loader").className = "loader";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
-				document.getElementById("switch-theme-color").innerHTML = lightstyle;
+				const themeMedia = window.matchMedia("(prefers-color-scheme: light)");
+        		if (themeMedia.matches) {
+					document.getElementById("loader").className = "loader";
+					document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+					document.getElementById("switch-theme-color").innerHTML = lightstyle;
+        		} else {
+					document.getElementById("loader").className = "loader-dark";
+					document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+					document.getElementById("switch-theme-color").innerHTML = darkstyle;
+        		}
 			}
 		}
 
