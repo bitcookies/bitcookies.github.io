@@ -69,25 +69,25 @@
 		function loading() {
 			let lightstyle = ":root {--body-color: #f4f4f4;--text-color: #646464;--b-h-color: #3c3b3b;--button-color: #3c3b3b;--label-color: #3c3b3b;--select-color: #3c3b3b;--input-bg: #3c3b3b;--mini-post-bg: #fff;--post-bg: #fff;--post-header-color: #3c3b3b;--table-th-color: #3c3b3b;--header-bg-color: #fff;--menu-bg: #fff;--scrollbar-color: #fff;--scrollbar-bg-color: #fff;--scrollbar-solid: #f0f4f5;--progress-wrap-content: url('data:image/svg+xml;base64,PHN2ZyB0PSIxNjI3NzEzNjI3MzEzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE5OTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTg3Ny4yMTYgNDkxLjgwOCIgcC1pZD0iMTk5NiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik02OTQuNjg4IDQ1Ny43NmwtMTU5LjM2LTE2MS4xMmMtOS40MDgtOS41MzYtMjMuMjk2LTExLjkwNC0zNC45NzYtNy4xNjgtMC43MzYgMC4yODgtMS4zMTIgMC45OTItMi4wMTYgMS4zNDQtMi45NzYgMS40NzItNS45ODQgMy4wNzItOC40OCA1LjU2OC0wLjAzMiAwLjAzMi0wLjAzMiAwLjA2NC0wLjA2NCAwLjA5Ni0wLjAzMiAwLjAzMi0wLjA2NCAwLjAzMi0wLjA5NiAwLjA2NGwtMTYwLjIyNCAxNTkuNzc2Yy0xMi41NzYgMTIuNTQ0LTEyLjYwOCAzMi44OTYtMC4wNjQgNDUuNTA0IDYuMjcyIDYuMzA0IDE0LjU2IDkuNDcyIDIyLjc4NCA5LjQ3MiA4LjIyNCAwIDE2LjQ0OC0zLjEwNCAyMi43Mi05LjM3NmwxMDQuMTkyLTEwMy44NzIgMCAzMDYuNzJjMCAxNy43OTIgMTQuNCAzMi4xOTIgMzIuMTYgMzIuMTkyIDE3Ljc2IDAgMzIuMTkyLTE0LjQgMzIuMTkyLTMyLjE5MmwwLTMwOC40MTYgMTA1LjUzNiAxMDYuNjg4YzYuMjcyIDYuMzY4IDE0LjU2IDkuNTY4IDIyLjg4IDkuNTY4IDguMTYgMCAxNi4zNTItMy4wNzIgMjIuNjI0LTkuMzEyQzcwNy4wNzIgNDkwLjc4NCA3MDcuMiA0NzAuNCA2OTQuNjg4IDQ1Ny43Nkw2OTQuNjg4IDQ1Ny43NnpNOTk1LjI2NCA1OTkuMiIgcC1pZD0iMTk5NyIgZmlsbD0iIzVBNDEzMSIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC43NzgxMDY5LjAuaTAiIGNsYXNzPSJzZWxlY3RlZCI+PC9wYXRoPjwvc3ZnPg==');}";
 			let darkstyle = ":root {--body-color: #252526;--text-color: #fff;--b-h-color: #efefef;--button-color: #efefef;--label-color: #efefef;--select-color: #efefef;--input-bg: #efefef;--mini-post-bg: #111;--post-bg: #1E1E1E;--post-header-color: #efefef;--table-th-color: #efefef;--header-bg-color: #111;--menu-bg: #1e1e1e;--scrollbar-color: #111;--scrollbar-bg-color: #252526;--scrollbar-solid: #111;--progress-wrap-content: url('data:image/svg+xml;base64,PHN2ZyB0PSIxNjI3NzEzNjI3MzEzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE5OTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTg3Ny4yMTYgNDkxLjgwOCIgcC1pZD0iMTk5NiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik02OTQuNjg4IDQ1Ny43NmwtMTU5LjM2LTE2MS4xMmMtOS40MDgtOS41MzYtMjMuMjk2LTExLjkwNC0zNC45NzYtNy4xNjgtMC43MzYgMC4yODgtMS4zMTIgMC45OTItMi4wMTYgMS4zNDQtMi45NzYgMS40NzItNS45ODQgMy4wNzItOC40OCA1LjU2OC0wLjAzMiAwLjAzMi0wLjAzMiAwLjA2NC0wLjA2NCAwLjA5Ni0wLjAzMiAwLjAzMi0wLjA2NCAwLjAzMi0wLjA5NiAwLjA2NGwtMTYwLjIyNCAxNTkuNzc2Yy0xMi41NzYgMTIuNTQ0LTEyLjYwOCAzMi44OTYtMC4wNjQgNDUuNTA0IDYuMjcyIDYuMzA0IDE0LjU2IDkuNDcyIDIyLjc4NCA5LjQ3MiA4LjIyNCAwIDE2LjQ0OC0zLjEwNCAyMi43Mi05LjM3NmwxMDQuMTkyLTEwMy44NzIgMCAzMDYuNzJjMCAxNy43OTIgMTQuNCAzMi4xOTIgMzIuMTYgMzIuMTkyIDE3Ljc2IDAgMzIuMTkyLTE0LjQgMzIuMTkyLTMyLjE5MmwwLTMwOC40MTYgMTA1LjUzNiAxMDYuNjg4YzYuMjcyIDYuMzY4IDE0LjU2IDkuNTY4IDIyLjg4IDkuNTY4IDguMTYgMCAxNi4zNTItMy4wNzIgMjIuNjI0LTkuMzEyQzcwNy4wNzIgNDkwLjc4NCA3MDcuMiA0NzAuNCA2OTQuNjg4IDQ1Ny43Nkw2OTQuNjg4IDQ1Ny43NnpNOTk1LjI2NCA1OTkuMiIgcC1pZD0iMTk5NyIgZmlsbD0iI2ZmZiIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC43NzgxMDY5LjAuaTAiIGNsYXNzPSJzZWxlY3RlZCI+PC9wYXRoPjwvc3ZnPg==');}";
-			var checked = localStorage.getItem("dark-theme-toggle");
+			var checked = localStorage.getItem("theme");
 
 			if (checked == "light") {
 				document.getElementById("loader").className = "loader";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+				document.getElementById("theme").className = "icon solid fa-toggle-off";
 				document.getElementById("switch-theme-color").innerHTML = lightstyle;
 			} else if (checked == "dark") {
 				document.getElementById("loader").className = "loader-dark";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				document.getElementById("theme").className = "icon solid fa-toggle-on";
 				document.getElementById("switch-theme-color").innerHTML = darkstyle;
 			} else {
 				const themeMedia = window.matchMedia("(prefers-color-scheme: light)");
         		if (themeMedia.matches) {
 					document.getElementById("loader").className = "loader";
-					document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+					document.getElementById("theme").className = "icon solid fa-toggle-off";
 					document.getElementById("switch-theme-color").innerHTML = lightstyle;
         		} else {
 					document.getElementById("loader").className = "loader-dark";
-					document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+					document.getElementById("theme").className = "icon solid fa-toggle-on";
 					document.getElementById("switch-theme-color").innerHTML = darkstyle;
         		}
 			}
@@ -124,7 +124,7 @@
 			<nav class="links">
 				<ul>
 					<li><a class="icon solid fa-user" style="cursor: pointer;" onclick="window.location='privacy/index.html'"> Privacy Page</a></li>
-					<li><a class="icon solid fa-toggle-off" id="dark-theme-toggle" onclick="saveDarkMode()" style="cursor: pointer;"> Dark Mode</a></li>
+					<li><a class="icon solid fa-toggle-off" id="theme" onclick="saveDarkMode()" style="cursor: pointer;"> Dark Mode</a></li>
 				</ul>
 			</nav>
 
@@ -289,21 +289,21 @@
 					<!-- CatTalk -->
 					<article class="mini-post">
 						<header>
-							<h3><a href="https://github.nousbuild.com/get-cattalk/">CatTalk</a></h3>
+							<h3><a href="https://pudding.nousbuild.com/get-cattalk/">CatTalk</a></h3>
 							<p class="published">My original campus comics release Web & Mini Program.</p>
 							<a href="https://github.com/pudding0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
 						</header>
-						<a href="https://github.nousbuild.com/get-cattalk/" class="image"><img src="images/cattalk.jpg" alt="cattalk" /></a>
+						<a href="https://pudding.nousbuild.com/get-cattalk/" class="image"><img src="images/cattalk.jpg" alt="cattalk" /></a>
 					</article>
 
 					<!-- City Weather -->
 					<article class="mini-post">
 						<header>
-							<h3><a href="https://github.nousbuild.com/get-cityweather/">City Weather</a></h3>
+							<h3><a href="https://pudding.nousbuild.com/get-cityweather/">City Weather</a></h3>
 							<p class="published">A weather Mini Program Project in a minimalist style of the cities.</p>
 							<a href="https://github.com/pudding0503" class="author"><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
 						</header>
-						<a href="https://github.nousbuild.com/get-cityweather/" class="image"><img src="images/cityweather.jpg" alt="cityweather" /></a>
+						<a href="https://pudding.nousbuild.com/get-cityweather/" class="image"><img src="images/cityweather.jpg" alt="cityweather" /></a>
 					</article>
 
 				</div>
@@ -339,7 +339,7 @@
 				<p>I'm a developer, mainly developing some Windows & macOS Apps, that about the Architecture and Civil Engineering.</p>
 				<p>You can see and download those software and expansion from <a href="https://bitcookies.nousbuild.com/">Bitcookies</a>.</p>
 				<ul class="actions">
-					<li><a href="https://github.nousbuild.com/" class="button">More</a></li>
+					<li><a href="https://github.com/pudding0503" class="button">More</a></li>
 				</ul>
 			</section>
 
@@ -407,22 +407,22 @@
 		function saveDarkMode() {
 			let lightstyle = ":root {--body-color: #f4f4f4;--text-color: #646464;--b-h-color: #3c3b3b;--button-color: #3c3b3b;--label-color: #3c3b3b;--select-color: #3c3b3b;--input-bg: #3c3b3b;--mini-post-bg: #fff;--post-bg: #fff;--post-header-color: #3c3b3b;--table-th-color: #3c3b3b;--header-bg-color: #fff;--menu-bg: #fff;--scrollbar-color: #fff;--scrollbar-bg-color: #fff;--scrollbar-solid: #f0f4f5;--progress-wrap-content: url('data:image/svg+xml;base64,PHN2ZyB0PSIxNjI3NzEzNjI3MzEzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE5OTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTg3Ny4yMTYgNDkxLjgwOCIgcC1pZD0iMTk5NiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik02OTQuNjg4IDQ1Ny43NmwtMTU5LjM2LTE2MS4xMmMtOS40MDgtOS41MzYtMjMuMjk2LTExLjkwNC0zNC45NzYtNy4xNjgtMC43MzYgMC4yODgtMS4zMTIgMC45OTItMi4wMTYgMS4zNDQtMi45NzYgMS40NzItNS45ODQgMy4wNzItOC40OCA1LjU2OC0wLjAzMiAwLjAzMi0wLjAzMiAwLjA2NC0wLjA2NCAwLjA5Ni0wLjAzMiAwLjAzMi0wLjA2NCAwLjAzMi0wLjA5NiAwLjA2NGwtMTYwLjIyNCAxNTkuNzc2Yy0xMi41NzYgMTIuNTQ0LTEyLjYwOCAzMi44OTYtMC4wNjQgNDUuNTA0IDYuMjcyIDYuMzA0IDE0LjU2IDkuNDcyIDIyLjc4NCA5LjQ3MiA4LjIyNCAwIDE2LjQ0OC0zLjEwNCAyMi43Mi05LjM3NmwxMDQuMTkyLTEwMy44NzIgMCAzMDYuNzJjMCAxNy43OTIgMTQuNCAzMi4xOTIgMzIuMTYgMzIuMTkyIDE3Ljc2IDAgMzIuMTkyLTE0LjQgMzIuMTkyLTMyLjE5MmwwLTMwOC40MTYgMTA1LjUzNiAxMDYuNjg4YzYuMjcyIDYuMzY4IDE0LjU2IDkuNTY4IDIyLjg4IDkuNTY4IDguMTYgMCAxNi4zNTItMy4wNzIgMjIuNjI0LTkuMzEyQzcwNy4wNzIgNDkwLjc4NCA3MDcuMiA0NzAuNCA2OTQuNjg4IDQ1Ny43Nkw2OTQuNjg4IDQ1Ny43NnpNOTk1LjI2NCA1OTkuMiIgcC1pZD0iMTk5NyIgZmlsbD0iIzVBNDEzMSIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC43NzgxMDY5LjAuaTAiIGNsYXNzPSJzZWxlY3RlZCI+PC9wYXRoPjwvc3ZnPg==');}";
 			let darkstyle = ":root {--body-color: #252526;--text-color: #fff;--b-h-color: #efefef;--button-color: #efefef;--label-color: #efefef;--select-color: #efefef;--input-bg: #efefef;--mini-post-bg: #111;--post-bg: #1E1E1E;--post-header-color: #efefef;--table-th-color: #efefef;--header-bg-color: #111;--menu-bg: #1e1e1e;--scrollbar-color: #111;--scrollbar-bg-color: #252526;--scrollbar-solid: #111;--progress-wrap-content: url('data:image/svg+xml;base64,PHN2ZyB0PSIxNjI3NzEzNjI3MzEzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE5OTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTg3Ny4yMTYgNDkxLjgwOCIgcC1pZD0iMTk5NiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik02OTQuNjg4IDQ1Ny43NmwtMTU5LjM2LTE2MS4xMmMtOS40MDgtOS41MzYtMjMuMjk2LTExLjkwNC0zNC45NzYtNy4xNjgtMC43MzYgMC4yODgtMS4zMTIgMC45OTItMi4wMTYgMS4zNDQtMi45NzYgMS40NzItNS45ODQgMy4wNzItOC40OCA1LjU2OC0wLjAzMiAwLjAzMi0wLjAzMiAwLjA2NC0wLjA2NCAwLjA5Ni0wLjAzMiAwLjAzMi0wLjA2NCAwLjAzMi0wLjA5NiAwLjA2NGwtMTYwLjIyNCAxNTkuNzc2Yy0xMi41NzYgMTIuNTQ0LTEyLjYwOCAzMi44OTYtMC4wNjQgNDUuNTA0IDYuMjcyIDYuMzA0IDE0LjU2IDkuNDcyIDIyLjc4NCA5LjQ3MiA4LjIyNCAwIDE2LjQ0OC0zLjEwNCAyMi43Mi05LjM3NmwxMDQuMTkyLTEwMy44NzIgMCAzMDYuNzJjMCAxNy43OTIgMTQuNCAzMi4xOTIgMzIuMTYgMzIuMTkyIDE3Ljc2IDAgMzIuMTkyLTE0LjQgMzIuMTkyLTMyLjE5MmwwLTMwOC40MTYgMTA1LjUzNiAxMDYuNjg4YzYuMjcyIDYuMzY4IDE0LjU2IDkuNTY4IDIyLjg4IDkuNTY4IDguMTYgMCAxNi4zNTItMy4wNzIgMjIuNjI0LTkuMzEyQzcwNy4wNzIgNDkwLjc4NCA3MDcuMiA0NzAuNCA2OTQuNjg4IDQ1Ny43Nkw2OTQuNjg4IDQ1Ny43NnpNOTk1LjI2NCA1OTkuMiIgcC1pZD0iMTk5NyIgZmlsbD0iI2ZmZiIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC43NzgxMDY5LjAuaTAiIGNsYXNzPSJzZWxlY3RlZCI+PC9wYXRoPjwvc3ZnPg==');}";
-			var checked = localStorage.getItem("dark-theme-toggle");
+			var checked = localStorage.getItem("theme");
 			
 			if (checked == "light") {
-				localStorage.setItem("dark-theme-toggle", "dark");
+				localStorage.setItem("theme", "dark");
 				document.getElementById("loader").className = "loader-dark";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				document.getElementById("theme").className = "icon solid fa-toggle-on";
 				document.getElementById("switch-theme-color").innerHTML = darkstyle;
 			} else if (checked == "dark") {
-				localStorage.setItem("dark-theme-toggle", "light");
+				localStorage.setItem("theme", "light");
 				document.getElementById("loader").className = "loader";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-off";
+				document.getElementById("theme").className = "icon solid fa-toggle-off";
 				document.getElementById("switch-theme-color").innerHTML = lightstyle;
 			} else {
-				localStorage.setItem("dark-theme-toggle", "dark");
+				localStorage.setItem("theme", "dark");
 				document.getElementById("loader").className = "loader-dark";
-				document.getElementById("dark-theme-toggle").className = "icon solid fa-toggle-on";
+				document.getElementById("theme").className = "icon solid fa-toggle-on";
 				document.getElementById("switch-theme-color").innerHTML = darkstyle;
 			}
 		}

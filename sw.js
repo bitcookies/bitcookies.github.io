@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.0.6';
+const CACHE_VERSION = '1.0.7';
 
 const BASE_CACHE_FILES = [
     '/pwa@192.png',
@@ -8,15 +8,15 @@ const BASE_CACHE_FILES = [
 ];
 
 const OFFLINE_CACHE_FILES = [
-    '/index.html',
+    '/404.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
-    '/index.html',
+    '/404.html',
 ];
 
-const OFFLINE_PAGE = '/index.html';
-const NOT_FOUND_PAGE = '/index.html';
+const OFFLINE_PAGE = '/404.html';
+const NOT_FOUND_PAGE = '/404.html';
 
 const CACHE_VERSIONS = {
     content: 'content-v' + CACHE_VERSION,

@@ -34,8 +34,8 @@
 | [Frosted Glass Theme](https://github.com/bitcookies/frosted-glass-winrar-theme) | WinRAR Theme              |
 | [Pudding VSCode Theme](https://github.com/bitcookies/pudding-vscode-theme) | VSCode Theme              |
 | [WinRAR Keygen](https://github.com/bitcookies/winrar-keygen) | C++                       |
-| [CatTalk](https://github.nousbuild.com/get-cityweather/)     | Mini Program              |
-| [City Weather](https://github.nousbuild.com/get-cityweather/) | Mini Program              |
+| [CatTalk](https://pudding.nousbuild.com/get-cityweather/)     | Mini Program              |
+| [City Weather](https://pudding.nousbuild.com/get-cityweather/) | Mini Program              |
 | [Pitch Perfect](https://github.com/pudding0503/pitchPerfect) | Swift                     |
 
 <a href="https://bitcookies.nousbuild.com/">
