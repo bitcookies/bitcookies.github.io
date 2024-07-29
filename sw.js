@@ -1,6 +1,9 @@
-const CACHE_VERSION = '1.0.7';
+const CACHE_VERSION = '1.1.0';
 
 const BASE_CACHE_FILES = [
+    '/favicon.png',
+    '/favicon.ico',
+    '/apple-touch-icon.png',
     '/pwa@192.png',
     '/pwa@512.png',
     '/images/',
@@ -31,8 +34,13 @@ const MAX_TTL = {
     json: 86400,
     js: 86400,
     css: 86400,
-    png: 86400,
-    jpg: 86400,
+    png: 604800,
+    jpg: 604800,
+    svg: 604800,
+    ttf: 604800,
+    eot: 604800,
+    woff: 604800,
+    woff2: 604800,
 };
 
 const CACHE_STRATEGY = {
@@ -44,7 +52,7 @@ const CACHE_STRATEGY = {
 
 const CACHE_BLACKLIST =  [
 ];
-const neverCacheUrls = [/.git/,/httperrors/];
+const neverCacheUrls = [/.git/, /sw.js/];
 
 const SUPPORTED_METHODS = [
     'GET',
