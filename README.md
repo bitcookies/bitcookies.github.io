@@ -15,7 +15,7 @@
   <img alt="icon" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fbitcookies&labelColor=%23000000&countColor=%23ff8a65" />
 </p>
 
-*Bit Cookies* is my development brand, used to share some desktop software and plug-ins I developed for everyone to download and use.
+Bitcookies is a development brand for sharing some of the desktop software and plugins I've developed for download and use.
 
 + 🖥 You can view and download at [repo](https://github.com/bitcookies?tab=repositories) or [bitcookies.nousbuild.com](https://bitcookies.nousbuild.com).
 + 🎨 For more information, you can focus on my GitHub <img src="https://avatars.githubusercontent.com/u/18262199" width="18px"/> [@pudding0503](https://github.com/pudding0503).
