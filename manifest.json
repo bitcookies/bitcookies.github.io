@@ -1,24 +1,31 @@
 {
     "name": "Bitcookies",
     "short_name": "Bitcookies",
-    "description": "Bitcookies is my development brand and is used on my Windows and macOS software & expansion.",
+    "description": "Bitcookies is a development brand for sharing some of the desktop software, plugins, themes and games I've developed for download and use.",
+    "categories": [
+        "repo",
+        "github",
+        "code",
+        "software",
+        "plugins",
+        "themes",
+        "games",
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
     "icons": [
         {
-            "src": "/pwa@192.png",
+            "src": "pwa/pwa@192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src": "/pwa@512.png",
+            "src": "pwa/pwa@512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "categories": [
-        "repo",
-        "github",
-        "code"
     ],
     "app": {
         "launch": {
@@ -30,6 +37,7 @@
     "theme_color": "#FFE8E7",
     "display": "standalone",
     "orientation": "portrait",
+    "id": "/",
     "start_url": "/?source=pwa",
     "scope": "/"
 }
