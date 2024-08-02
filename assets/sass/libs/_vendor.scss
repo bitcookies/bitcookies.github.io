@@ -1,5 +1,3 @@
-// vendor.scss v1.0 | @ajlkn | MIT licensed */
-
 // Vars.
 
 	/// Vendor prefixes.
@@ -12,7 +10,7 @@
 	);
 
 	/// Properties that should be vendorized.
-	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
+	/// Data via caniuse.com, github.com/postcss/autoprefixer, and Developer.mozilla.org
 	/// @var {list}
 	$vendor-properties: (
 
@@ -193,7 +191,7 @@
 	);
 
 	/// Values that should be vendorized.
-	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
+	/// Data via caniuse.com, github.com/postcss/autoprefixer, and Developer.mozilla.org
 	/// @var {list}
 	$vendor-values: (
 
