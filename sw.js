@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.2.0';
+const CACHE_VERSION = '1.2.1';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
