@@ -304,49 +304,17 @@
 	</style>
 
 	<!-- Style CSS -->
-	<script type="text/javascript">
-		function loading() {
-			let lightstyle = ":root {--body-background: #fbfbfb; --box-background: #f4f4f4; --box-title: #000; --box-text: #555; --symbol-color: #ba8b5b;}";
-			let darkstyle = ":root {--body-background: #111111; --box-background: #1e1e1e; --box-title: #fff; --box-text: #ccc; --symbol-color: #fbdab5;}";
-			var checked = localStorage.getItem("theme");
-
-			if (checked == "light") {
-				document.getElementById("loader").className = "loader";
-				document.getElementById("switch-theme-color").innerHTML = lightstyle;
-			} else if (checked == "dark") {
-				document.getElementById("loader").className = "loader-dark";
-				document.getElementById("switch-theme-color").innerHTML = darkstyle;
-			} else {
-				const themeMedia = window.matchMedia("(prefers-color-scheme: light)");
-        		if (themeMedia.matches) {
-					document.getElementById("loader").className = "loader";
-					document.getElementById("switch-theme-color").innerHTML = lightstyle;
-        		} else {
-					document.getElementById("loader").className = "loader-dark";
-					document.getElementById("switch-theme-color").innerHTML = darkstyle;
-        		}
-			}
-		}
-
-		function onload() {
-			if (document.readyState === 'loading') {
-				console.log('Loading Not Yet');
-			} else {
-				console.log('Loading Complete');
-				setTimeout(function () {
-					var loader = document.getElementById("loader");
-                    loader.classList.add("fade-out");
-                    loader.addEventListener("animationend", function() {
-                        loader.remove();
-                    });
-				}, 1000);
-			}
-		}
-	</script>
+	<script>
+	window.BC_THEME_STYLES = {
+		light: ":root {--body-background: #fbfbfb; --box-background: #f4f4f4; --box-title: #000; --box-text: #555; --symbol-color: #ba8b5b;}",
+		dark: ":root {--body-background: #111111; --box-background: #1e1e1e; --box-title: #fff; --box-text: #ccc; --symbol-color: #fbdab5;}"
+	};
+</script>
+<script src="assets/js/theme.js"></script>
 
 </head>
 
-<body class="homepage is-preload" onload="onload()">
+<body class="homepage is-preload" onload="bcOnLoad()">
 
 	<!-- Loader -->
 	<div id="loader"></div>
@@ -380,8 +348,9 @@
 	</div>
 
 	<!-- Loading -->
-	<script>loading();</script>
+	<script>bcLoading();</script>
 
 </body>
 
 </html>
+

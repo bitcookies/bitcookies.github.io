@@ -1,15 +1,17 @@
-const CACHE_VERSION = '1.2.1';
+const CACHE_VERSION = '1.3.0';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
     '/favicon.png',
     '/apple-touch-icon.png',
+    '/manifest.json',
     '/assets/css/fontawesome-all.min.css',
     '/assets/css/main.css',
     '/assets/js/breakpoints.min.js',
     '/assets/js/browser.min.js',
     '/assets/js/jquery.min.js',
     '/assets/js/main.js',
+    '/assets/js/theme.js',
     '/assets/js/util.js',
     '/assets/webfonts/fa-brands-400.eot',
     '/assets/webfonts/fa-brands-400.svg',
@@ -26,8 +28,8 @@ const BASE_CACHE_FILES = [
     '/assets/webfonts/fa-solid-900.ttf',
     '/assets/webfonts/fa-solid-900.woff',
     '/assets/webfonts/fa-solid-900.woff2',
-    '/assets/images/logo.svg',
-    '/assets/images/logo-words.svg',
+    '/images/logo.svg',
+    '/images/logo-words.svg',
     '/pwa/pwa@192.png',
     '/pwa/pwa@512.png',
     '/404.html',
@@ -40,6 +42,8 @@ const OFFLINE_CACHE_FILES = [
     '/favicon.ico',
     '/favicon.png',
     '/apple-touch-icon.png',
+    '/assets/css/main.css',
+    '/assets/js/theme.js',
     '/images/logo.svg',
 ];
 
@@ -48,6 +52,9 @@ const NOT_FOUND_CACHE_FILES = [
     '/favicon.ico',
     '/favicon.png',
     '/apple-touch-icon.png',
+    '/assets/css/main.css',
+    '/assets/js/theme.js',
+    '/images/logo.svg',
 ];
 
 const OFFLINE_PAGE = '/offline.html';
