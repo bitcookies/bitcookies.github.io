@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.3.0';
+const CACHE_VERSION = '1.4.0';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
@@ -30,15 +30,31 @@ const BASE_CACHE_FILES = [
     '/assets/webfonts/fa-solid-900.woff2',
     '/images/logo.svg',
     '/images/logo-words.svg',
+    '/images/pudding-vscode-theme.jpg',
+    '/images/frosted-glass-winrar-theme.png',
+    '/images/winrar-keygen.jpg',
+    '/images/nousbuild.jpg',
+    '/images/cattalk.jpg',
+    '/images/cityweather.jpg',
+    '/images/codeu.png',
+    '/images/codelab.png',
     '/pwa/pwa@192.png',
     '/pwa/pwa@512.png',
+    '/index.html',
+    '/privacy/index.html',
+    '/pudding-vscode-theme/index.html',
+    '/frosted-glass-winrar-theme/index.html',
+    '/winrar-keygen/index.html',
+    '/pudding-vscode-theme/icon.png',
+    '/frosted-glass-winrar-theme/icon.png',
+    '/winrar-keygen/icon.png',
     '/404.html',
     '/offline.html',
-
 ];
 
 const OFFLINE_CACHE_FILES = [
     '/offline.html',
+    '/index.html',
     '/favicon.ico',
     '/favicon.png',
     '/apple-touch-icon.png',
@@ -49,6 +65,7 @@ const OFFLINE_CACHE_FILES = [
 
 const NOT_FOUND_CACHE_FILES = [
     '/404.html',
+    '/index.html',
     '/favicon.ico',
     '/favicon.png',
     '/apple-touch-icon.png',
