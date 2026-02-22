@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -27,8 +27,6 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#FFE8E7">
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#FFE8E7">
 	<link rel="manifest" href="../manifest.json">
 	<script type="text/javascript">
 		if (navigator.serviceWorker != null) {
@@ -38,31 +36,6 @@
 		  });
 		}
 	</script>
-
-	<!-- Loader CSS -->
-	<style>
-		.loader {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 99;
-			background: url("../images/logo.svg") center no-repeat #f4f4f4;
-			background-size: 72px 72px;
-		}
-
-		.loader-dark {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 99;
-			background: url("../images/logo.svg") center no-repeat #1e1e1e;
-			background-size: 72px 72px;
-		}
-	</style>
 
 	<!-- Color CSS Define -->
 	<style id="switch-theme-color"></style>
@@ -74,7 +47,7 @@
 
 </head>
 
-<body class="single is-preload" onload="bcOnLoad()">
+<body class="single is-preload">
 
 	<!-- Loader -->
 	<div id="loader"></div>
@@ -88,12 +61,9 @@
 			<nav class="links">
 				<ul>
 					<li><a class="icon solid fa-user" style="cursor: pointer;" onclick="window.location='index.html'"> Privacy Page</a></li>
-					<li><a class="icon solid fa-toggle-off" id="theme" onclick="saveDarkMode()" style="cursor: pointer;"> Dark Mode</a></li>
+					<li><a class="icon solid fa-toggle-on" id="theme" style="cursor: pointer;"> Dark Mode</a></li>
 				</ul>
 			</nav>
-
-			<!-- Loading Function -->
-			<script type="text/javascript">bcLoading();</script>
 
 			<nav class="main">
 				<ul>
@@ -147,7 +117,7 @@
 						<p>Bitcookies' Privacy Statement.</p>
 					</div>
 					<div class="meta">
-						<p class="published" style="background-color: #B0DAE0; text-align: center;">Developer</p>
+						<p class="published">Developer</p>
 						<a href="https://github.com/pudding0503" class="author"><span class="name">ONing</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
 					</div>
 				</header>
@@ -200,47 +170,36 @@
 		</svg>
 	</div>
 
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			loading();
+
+			const themeToggle = document.getElementById('theme');
+			if (themeToggle) {
+				themeToggle.addEventListener('click', saveDarkMode);
+			}
+
+			const fix1Btn = document.getElementById("fix1");
+			if (fix1Btn) {
+				fix1Btn.addEventListener("click", () => {
+					fix1Button(fix1Btn.id);
+				});
+			}
+			const fix2Btn = document.getElementById("fix2");
+			if (fix2Btn) {
+				fix2Btn.addEventListener("click", () => {
+					fix2Button(fix2Btn.id);
+				});
+			}
+		});
+
+		window.addEventListener('load', () => {
+			onload();
+		});
+	</script>
+
 	<!-- jQuery -->
 	<script src="../assets/js/jquery.min.js"></script>
-
-	<script language="javaScript">
-		/* fix1 button */
-		function fix1Button(clicked_id) {
-			document.getElementById("fix1").innerHTML = "Done!";
-			document.getElementById("fix1").disabled = true;
-			var btn = document.getElementById(clicked_id);
-			btn.classList.add('start');
-			setTimeout(function () {
-				btn.classList.remove('start');
-				/* clear local storage */
-				sessionStorage.clear();
-				localStorage.clear();
-			}, 2000);
-		}
-
-		/* fix2 button */
-		function fix2Button(clicked_id) {
-			document.getElementById("fix2").innerHTML = "Done!";
-			document.getElementById("fix2").disabled = true;
-			var btn = document.getElementById(clicked_id);
-			btn.classList.add('start');
-			setTimeout(function () {
-				btn.classList.remove('start');
-				/* remove the service worker cache */
-				caches.keys().then(function (keyList) {
-					return Promise.all(keyList.map(function (key) {
-						return caches.delete(key);
-					}));
-				})
-				/* unregister service workers */
-				navigator.serviceWorker.getRegistrations().then(function (registrations) {
-					for (let registration of registrations) {
-						registration.unregister();
-					}
-				});
-			}, 2000);
-		}
-	</script>
 
 	<!-- Scripts -->
 	<script src="../assets/js/browser.min.js"></script>
@@ -251,4 +210,5 @@
 </body>
 
 </html>
+
 

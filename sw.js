@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.4.0';
+const CACHE_VERSION = '1.5.0';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
@@ -46,8 +46,29 @@ const BASE_CACHE_FILES = [
     '/frosted-glass-winrar-theme/index.html',
     '/winrar-keygen/index.html',
     '/pudding-vscode-theme/icon.png',
+    '/pudding-vscode-theme/link.png',
+    '/pudding-vscode-theme/screenshot-1.png',
+    '/pudding-vscode-theme/screenshot-2.png',
+    '/pudding-vscode-theme/screenshot-3.png',
+    '/pudding-vscode-theme/screenshot-4.png',
+    '/pudding-vscode-theme/screenshot-5.png',
+    '/pudding-vscode-theme/0-first-meeting.jpg',
+    '/pudding-vscode-theme/1-classroom.jpg',
+    '/pudding-vscode-theme/2-giftbox.jpg',
+    '/pudding-vscode-theme/3-drink.jpg',
+    '/pudding-vscode-theme/4-rabbit-cosplay.jpg',
+    '/pudding-vscode-theme/4-rabbit-cosplay-2.jpg',
+    '/pudding-vscode-theme/5-aquarium.jpg',
+    '/pudding-vscode-theme/6-pudding.jpg',
+    '/pudding-vscode-theme/7-change-clothes.jpg',
+    '/pudding-vscode-theme/8-puff.jpg',
+    '/pudding-vscode-theme/9-puff-loves-learning.jpg',
+    '/pudding-vscode-theme/10-face.jpg',
+    '/pudding-vscode-theme/11-christmas.jpg',
+    '/pudding-vscode-theme/12-new-year.jpg',
     '/frosted-glass-winrar-theme/icon.png',
     '/winrar-keygen/icon.png',
+    '/images/powered-by.svg',
     '/404.html',
     '/offline.html',
 ];

@@ -124,7 +124,9 @@
 	});
 })(jQuery);
 
-// saveDarkMode
+// footerYeaer
+document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+
 function saveDarkMode() {
 	if (!window.BCTheme || typeof window.BCTheme.applyTheme !== 'function') {
 		return;
@@ -135,5 +137,36 @@ function saveDarkMode() {
 	window.BCTheme.applyTheme(nextTheme, { persist: true });
 }
 
-// footerYeaer
-document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+function fix1Button(clicked_id) {
+	document.getElementById("fix1").innerHTML = "Done!";
+	document.getElementById("fix1").disabled = true;
+	var btn = document.getElementById(clicked_id);
+	btn.classList.add('start');
+	setTimeout(function () {
+		btn.classList.remove('start');
+		sessionStorage.clear();
+		localStorage.clear();
+	}, 1000);
+}
+
+function fix2Button(clicked_id) {
+	document.getElementById("fix2").innerHTML = "Done!";
+	document.getElementById("fix2").disabled = true;
+	var btn = document.getElementById(clicked_id);
+	btn.classList.add('start');
+	setTimeout(function () {
+		btn.classList.remove('start');
+		/* remove the service worker cache */
+		caches.keys().then(function (keyList) {
+			return Promise.all(keyList.map(function (key) {
+				return caches.delete(key);
+			}));
+		})
+		/* unregister service workers */
+		navigator.serviceWorker.getRegistrations().then(function (registrations) {
+			for (let registration of registrations) {
+				registration.unregister();
+			}
+		});
+	}, 1000);
+}
