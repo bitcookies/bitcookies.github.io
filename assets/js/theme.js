@@ -109,23 +109,24 @@
 
 		var styleElement = document.getElementById('switch-theme-color');
 		if (styleElement && styles[normalizedTheme]) {
-			styleElement.textContent = styles[normalizedTheme];
+			if (normalizedTheme === 'light') {
+				styleElement.textContent = styles.light;
+			} else {
+				styleElement.textContent = styles.dark;
+			}
 		}
 
 		return normalizedTheme;
 	}
 
-	function loading() {
+	function bcLoading() {
 		var storedTheme = getStoredTheme();
-		if (storedTheme) {
-			applyTheme(storedTheme, { persist: false });
-			return;
+		if (storedTheme === 'light') {
+			applyTheme('light', { persist: false });
 		}
-
-		applyTheme('dark', { persist: true });
 	}
 
-	function onload() {
+	function bcOnLoad() {
 		var loader = document.getElementById('loader');
 		if (!loader) {
 			return;
@@ -153,7 +154,7 @@
 		getStoredTheme: getStoredTheme
 	};
 
-	window.loading = loading;
-	window.onload = onload;
+	window.bcLoading = bcLoading;
+	window.bcOnLoad = bcOnLoad;
 
 })();

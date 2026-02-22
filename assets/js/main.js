@@ -146,7 +146,7 @@ function fix1Button(clicked_id) {
 		btn.classList.remove('start');
 		sessionStorage.clear();
 		localStorage.clear();
-	}, 1000);
+	}, 300);
 }
 
 function fix2Button(clicked_id) {
@@ -168,5 +168,5 @@ function fix2Button(clicked_id) {
 				registration.unregister();
 			}
 		});
-	}, 1000);
+	}, 300);
 }
