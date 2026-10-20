@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.5.1';
+const CACHE_VERSION = '1.5.2';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
@@ -68,6 +68,9 @@ const BASE_CACHE_FILES = [
     '/pudding-vscode-theme/12-new-year.jpg',
     '/frosted-glass-winrar-theme/icon.png',
     '/winrar-keygen/icon.png',
+    '/pdf-blender/icon.png',
+    '/pdf-blender/microsoft-store-btn.svg',
+    '/pdf-blender/screenshot.png',
     '/images/powered-by.svg',
     '/404.html',
     '/offline.html',

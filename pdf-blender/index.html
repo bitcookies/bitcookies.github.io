@@ -1,0 +1,261 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- Title -->
+	<title>PDF Blender - Bitcookies</title>
+
+	<!-- Meta -->
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-language" content="en-us">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="author" content="Bitcookies">
+	<meta name="description" content="PDF Blender helps keep PDFs readable while making extraction harder.">
+	<meta name="keywords" content="Bitcookies, Bit, Cookies, Windows, PDF, Blender, PDF Blender, C++, Github Actions, Workflow">
+
+  	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="192x192" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../favicon.png">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta name="theme-color" content="#222222">
+
+	<!-- Add PWA Support -->
+	<meta name="apple-touch-fullscreen" content="yes"> 
+	<meta name="apple-mobile-web-app-title" content="Bitcookies">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#FFE8E7">
+
+	<link rel="manifest" href="../manifest.json">
+	<script type="text/javascript">
+		if (navigator.serviceWorker != null) {
+		  navigator.serviceWorker.register('../sw.js')
+		  .then(function(registration) {
+			console.log('Registered events at scope: ', registration.scope);
+		  });
+		}
+	</script>
+
+	<!-- Color CSS Define -->
+	<style id="switch-theme-color">
+		:root {
+			--theme-color: #FCDBB6;
+			--theme-color-pale: #B98A5A;
+			--body-color: #252526;
+			--text-color: #999999;
+			--text-color-select: #BBBBBB;
+			--b-h-color: #EFEFEF;
+			--button-color: #EFEFEF;
+			--label-color: #EFEFEF;
+			--select-color: #EFEFEF;
+			--input-bg: #EFEFEF;
+			--mini-post-bg: #1E1E1E;
+			--post-bg: #1E1E1E;
+			--post-header-color: #EFEFEF;
+			--table-th-color: #EFEFEF;
+			--header-bg-color: #1E1E1EB0;
+			--menu-bg: #1E1E1E;
+			--scrollbar-color: #1E1E1E;
+			--scrollbar-bg-color: #1E1E1E;
+			--scrollbar-solid: #111;
+			--progress-wrap-content: url('data:image/svg+xml;base64,PHN2ZyB0PSIxNjI3NzEzNjI3MzEzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE5OTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PHBhdGggZD0iTTg3Ny4yMTYgNDkxLjgwOCIgcC1pZD0iMTk5NiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik02OTQuNjg4IDQ1Ny43NmwtMTU5LjM2LTE2MS4xMmMtOS40MDgtOS41MzYtMjMuMjk2LTExLjkwNC0zNC45NzYtNy4xNjgtMC43MzYgMC4yODgtMS4zMTIgMC45OTItMi4wMTYgMS4zNDQtMi45NzYgMS40NzItNS45ODQgMy4wNzItOC40OCA1LjU2OC0wLjAzMiAwLjAzMi0wLjAzMiAwLjA2NC0wLjA2NCAwLjA5Ni0wLjAzMiAwLjAzMi0wLjA2NCAwLjAzMi0wLjA5NiAwLjA2NGwtMTYwLjIyNCAxNTkuNzc2Yy0xMi41NzYgMTIuNTQ0LTEyLjYwOCAzMi44OTYtMC4wNjQgNDUuNTA0IDYuMjcyIDYuMzA0IDE0LjU2IDkuNDcyIDIyLjc4NCA5LjQ3MiA4LjIyNCAwIDE2LjQ0OC0zLjEwNCAyMi43Mi05LjM3NmwxMDQuMTkyLTEwMy44NzIgMCAzMDYuNzJjMCAxNy43OTIgMTQuNCAzMi4xOTIgMzIuMTYgMzIuMTkyIDE3Ljc2IDAgMzIuMTkyLTE0LjQgMzIuMTkyLTMyLjE5MmwwLTMwOC40MTYgMTA1LjUzNiAxMDYuNjg4YzYuMjcyIDYuMzY4IDE0LjU2IDkuNTY4IDIyLjg4IDkuNTY4IDguMTYgMCAxNi4zNTItMy4wNzIgMjIuNjI0LTkuMzEyQzcwNy4wNzIgNDkwLjc4NCA3MDcuMiA0NzAuNCA2OTQuNjg4IDQ1Ny43Nkw2OTQuNjg4IDQ1Ny43NnpNOTk1LjI2NCA1OTkuMiIgcC1pZD0iMTk5NyIgZmlsbD0iI2ZmZiIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC43NzgxMDY5LjAuaTAiIGNsYXNzPSJzZWxlY3RlZCI+PC9wYXRoPjwvc3ZnPg==');
+		}
+	</style>
+	<script src="../assets/js/theme.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" id="main-css" href="../assets/css/main.css" />
+
+</head>
+
+<body class="single is-preload">
+
+	<!-- Loader -->
+	<div id="loader" class="loader"></div>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../index.html">BITCOOKIES</a></h1>
+			<nav class="links">
+				<ul>
+					<li><a class="icon solid fa-user" style="cursor: pointer;" onclick="window.location='../privacy/index.html'"> Privacy Page</a></li>
+					<li><a class="icon solid fa-toggle-on" id="theme" style="cursor: pointer;"> Dark Mode</a></li>
+				</ul>
+			</nav>
+
+			<nav class="main">
+				<ul>
+					<li class="menu">
+						<a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<section id="menu">
+
+			<!-- Links -->
+			<section>
+				<ul class="links">
+					<li>
+						<a href="../pudding-vscode-theme/index.html">
+							<h3>Pudding VSCode Theme</h3>
+							<p>A Pudding-inspired illustration color theme for Visual Studio Code.</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="links">
+					<li>
+						<a href="../frosted-glass-winrar-theme/index.html">
+							<h3>Frosted Glass WinRAR Theme</h3>
+							<p>A Frosted Glass Style Theme of WinRAR.</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="links">
+					<li>
+						<a href="../winrar-keygen/index.html">
+							<h3>WinRAR Keygen</h3>
+							<p>Principle of WinRAR key generation.</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Actions -->
+			<section>
+				<ul class="actions stacked">
+					<li><a href="https://github.com/bitcookies" class="button large fit">Back to Github</a></li>
+				</ul>
+			</section>
+
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="index.html">PDF Blender</a></h2>
+						<p>Keep PDFs readable. Make extraction harder.</p>
+					</div>
+					<div class="meta">
+						<p class="published">Developer</p>
+						<a href="https://github.com/pudding0503" class="author"><span class="name">ONing</span><img src="https://avatars.githubusercontent.com/u/18262199?v=4" alt="Avatar" /></a>
+					</div>
+				</header>
+				
+				<span class="image featured"><img src="../images/pdf-blender.jpg" alt="pdf-blender" /></span>
+
+				<p style="text-align: center;">
+					<img width="100px" src="icon.png" style="text-align: center;" alt="PDF Blender" />
+				</p>
+
+				<h2 style="text-align: center;">PDF Blender</h2>
+				<p style="text-align: center;">Keep PDFs readable. Make extraction harder.</p>
+
+				<p style="text-align: center;">
+					<a href="https://github.com/bitcookies/pdf-blender/releases">
+						<img src="https://img.shields.io/github/v/release/bitcookies/pdf-blender?label=version" />
+					</a>
+					<a href="https://github.com/bitcookies/pdf-blender/issues">
+						<img alt="Issues" src="https://img.shields.io/github/issues/bitcookies/pdf-blender?color=F48D73" />
+					</a>
+					<a href="https://github.com/bitcookies/pdf-blender/blob/master/LICENSE">
+						<img alt="License" src="https://img.shields.io/github/license/bitcookies/pdf-blender.svg" />
+					</a>
+				</p>
+				
+				<h2>1. Info</h2>
+				<p>PDF Blender helps you keep PDFs readable while making their content harder to copy or extract. Adjust page sizes, flatten pages into images, add watermarks, customize the copy layer, and set metadata or reader permissions. Your PDFs stay on your device while you work. PDF Blender is not encryption or DRM and cannot stop screenshots, OCR, or every form of copying.</p>
+				<h2>2. Install</h2>
+				<p>Get it for free from the Microsoft Store.</p>
+				<p style="text-align: center;">
+					<a href="https://apps.microsoft.com/detail/9p65nbnqrgvz">
+						<img src="microsoft-store-btn.svg" />
+					</a>
+				</p>
+				<h2>3. Features</h2>
+				<ul>
+					<li>Resize pages to A4 and other standard paper sizes, or normalize their widths.</li>
+					<li>Flatten pages into images with adjustable quality.</li>
+					<li>Add a single large watermark or repeated small watermarks.</li>
+					<li>Shape the copy layer with layout changes, random Unicode, digits, letters, or custom warning text.</li>
+					<li>Apply pixel noise, texture changes, and geometric perturbation.</li>
+					<li>Add hidden prompt text for research and experimentation, without promising a particular AI response.</li>
+					<li>Set document metadata, copyright information, and reader permissions.</li>
+					<li>Process PDFs locally without uploading document content.</li>
+				</ul>
+				<h2>4. Screenshot</h2>
+				<img width="70%" src="screenshot.png" alt="PDF Blender Screenshot">
+				<h2>5. Privacy and Limitations</h2>
+				<p>PDF Blender does not upload PDF content. It is designed to make copying and extraction more difficult, but it does not provide encryption, access control, or DRM. It cannot prevent screenshots, OCR, or every other way of copying content. See the <a href="https://pdf-blender.vercel.app/privacy">Privacy Policy</a>.</p>
+				<h2>6. License</h2>
+				<p>The code is available under the <a href="https://github.com/bitcookies/pdf-blender/blob/master/LICENSE">GNU General Public License v3.0</a></p>
+				<ul class="actions">
+					<li><a href="../index.html" class="button large icon solid fa-backward">Back Home</a></li>
+					<li><a href="https://apps.microsoft.com/detail/9p65nbnqrgvz" class="button large icon solid fa-download">Download</a></li>
+					<li><a href="https://github.com/bitcookies/pdf-blender" class="button large icon brands fa-github">View on Github</a></li>
+				</ul>
+				<footer>
+					<ul class="stats">
+						<li><a class="icon brands fa-windows">Windows</a></li>
+					</ul>
+				</footer>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/pudding0503" class="icon brands fab fa-github-alt" title="Github @pudding0503"><span class="label">Github</span></a></li>
+				<li><a href="https://github.com/bitcookies" class="icon brands fab fa-github" title="Github @bitcookies"><span class="label">Github</span></a></li>
+			</ul>
+			<p class="copyright">&copy; <span id="footerYear">2021</span> <a href="https://bitcookies.nousbuild.com">Bitcookies</a>. All Rights Reserved.</p>
+		</section>
+
+	</div>
+
+	<!-- Move2Top -->
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			bcLoading();
+			const themeToggle = document.getElementById('theme');
+			if (themeToggle) {
+				themeToggle.addEventListener('click', saveDarkMode);
+			}
+		});
+
+		window.addEventListener('load', () => {
+			bcOnLoad();
+		});
+	</script>
+
+	<!-- jQuery -->
+	<script src="../assets/js/jquery.min.js"></script>
+
+	<!-- Scripts -->
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+
