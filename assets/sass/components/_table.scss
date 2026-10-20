@@ -5,6 +5,31 @@
 		overflow-x: auto;
 	}
 
+	.theme-gallery,
+	.illustration-gallery {
+		margin-bottom: _size(element-margin);
+
+		table {
+			margin-bottom: 0;
+		}
+
+		th {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		img {
+			display: block;
+			height: auto;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	}
+
+	.illustration-gallery table {
+		min-width: 36em;
+	}
+
 	table {
 		margin: 0 0 _size(element-margin) 0;
 		width: 100%;

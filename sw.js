@@ -1,4 +1,4 @@
-const CACHE_VERSION = '1.5.2';
+const CACHE_VERSION = '1.5.3';
 
 const BASE_CACHE_FILES = [
     '/favicon.ico',
@@ -40,11 +40,18 @@ const BASE_CACHE_FILES = [
     '/images/codelab.png',
     '/pwa/pwa@192.png',
     '/pwa/pwa@512.png',
+    '/',
+    '/privacy/',
+    '/pudding-vscode-theme/',
+    '/frosted-glass-winrar-theme/',
+    '/winrar-keygen/',
+    '/pdf-blender/',
     '/index.html',
     '/privacy/index.html',
     '/pudding-vscode-theme/index.html',
     '/frosted-glass-winrar-theme/index.html',
     '/winrar-keygen/index.html',
+    '/pdf-blender/index.html',
     '/pudding-vscode-theme/icon.png',
     '/pudding-vscode-theme/link.png',
     '/pudding-vscode-theme/screenshot-1.png',
@@ -78,6 +85,7 @@ const BASE_CACHE_FILES = [
 
 const OFFLINE_CACHE_FILES = [
     '/offline.html',
+    '/',
     '/index.html',
     '/favicon.ico',
     '/favicon.png',
@@ -89,6 +97,7 @@ const OFFLINE_CACHE_FILES = [
 
 const NOT_FOUND_CACHE_FILES = [
     '/404.html',
+    '/',
     '/index.html',
     '/favicon.ico',
     '/favicon.png',

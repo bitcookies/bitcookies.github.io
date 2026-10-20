@@ -1,4 +1,13 @@
 ﻿(function () {
+	var pathname = window.location.pathname;
+	if (/\/index\.html$/.test(pathname)) {
+		window.history.replaceState(
+			window.history.state,
+			'',
+			pathname.replace(/index\.html$/, '') + window.location.search + window.location.hash
+		);
+	}
+
 	var STORAGE_KEY = 'theme';
 
 	var DEFAULT_THEME_STYLES = {

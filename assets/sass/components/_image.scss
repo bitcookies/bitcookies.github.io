@@ -64,3 +64,69 @@
 			}
 		}
 	}
+
+	.product-icon-wrap,
+	.product-heading,
+	.product-tagline,
+	.product-badges,
+	.product-store-badge {
+		text-align: center;
+	}
+
+	.product-icon-wrap {
+		margin: 0 0 1.5em 0;
+	}
+
+	.product-icon {
+		display: inline-block;
+		height: auto;
+		max-width: 100%;
+		width: 100px;
+	}
+
+	.product-heading {
+		margin-bottom: 0.35em;
+	}
+
+	.product-tagline {
+		margin-bottom: 1.5em;
+	}
+
+	.product-badges,
+	.product-store-badge {
+		margin-bottom: _size(element-margin);
+
+		img {
+			display: inline-block;
+			max-width: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	.product-store-badge img {
+		width: min(100%, 260px);
+	}
+
+	.content-screenshot {
+		display: block;
+		height: auto;
+		margin: 0 auto _size(element-margin);
+		max-width: 100%;
+		width: 70%;
+	}
+
+	.privacy-brand {
+		display: block;
+		height: auto;
+		margin: 0 auto 3em;
+		max-width: 100%;
+		width: 200px;
+	}
+
+	.brand-title {
+		letter-spacing: 0.2em;
+	}
+
+	.theme-toggle {
+		cursor: pointer;
+	}
